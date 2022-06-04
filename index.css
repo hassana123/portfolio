@@ -172,7 +172,6 @@ li a:hover{
 
 .hamburger{
     margin-left: 90%;
-    margin-top: 0%;
     display: none;
     cursor: pointer;
 
@@ -225,5 +224,82 @@ li a:hover{
         word-spacing: 10px;
         line-height: 1.5rem;
     }
+}
+@media screen and (max-width: 400px){
+    .about .text{
+        display: none;
+    }
+    main{
+        display: block;
+        height: 100vh;
+        width: 100%;
+    }
+    .hamburger{
+        display: block;
+        margin-left: 95%;
+    
+    }
+    .about p{
+        margin-bottom: 30%;
+        font-size: 1rem;
+    }
+    .about{
+        width: 100%;
+        margin-top:20%;
+        font-size: 1.6rem;
+    }
+    
+    
+    .hireMe{
+        margin-left: 8%;
+        text-decoration: none;
+        background-color: #184a45ff;
+        color: #fcf6f5;
+        padding: 5px 30px;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+    #aboutMe{
+        margin-top: -40%;
+        display:block;
+        color: #fcf6f5;
+        background-color: #184a45ff;
+    }
+    .container{
+        margin-top: 30%;
+    }
+    
+    #aboutMe img{
+        margin-top: 45%;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        height: 40vh;
+        border-radius: 90px;
+    }
+    .hamburger{
+        display: block;
+        margin-left: 95%;
+    
+    }
+    .top .txt{
+        margin-top: -10%;
+    }
+    .top {
+        margin-top: 30%;
+    }
+    #aboutMe .text{
+        width: 80%;
+        height: 100vh;
+        margin-top: 10%;
+        margin-left: 15%;
+        word-spacing: 10px;
+        line-height: 1.5rem;
+    }
+    
+    
 }
 
