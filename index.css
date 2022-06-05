@@ -3,6 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+#side-menu{
+    width: 100%;
+    height: 100vh;
+    margin-top: -15%;
+    position: absolute;
+    left:0%;
+    display: none;
+    text-align: right;
+    padding-bottom: 20%;
+    background-color: rgba(24, 74, 69, 0.849);
+}
+.side-nav .close{
+    text-decoration: none;
+    color: #fc766aff;
+    margin-right: 5%;
+    font-size: 4rem;
+}
+.side-nav ul li{
+    list-style: none;
+    padding-bottom: 15%;
+
+}
+.side-nav ul li a{
+    text-decoration: none;
+    color: #fcf6f5;
+    margin: 0 50%;
+    border-bottom: 2px solid #fc766aff;
+    font-size: 1.5rem;
+    margin-left: 3%;
+    
+
+}
+.side-nav .active{
+    color: #fc766aff;
+    border-bottom: 2px solid #fcf6f5;
+}
+
 body{
     background-color: #fcf6f5;
     text-transform: capitalize;
@@ -126,14 +163,14 @@ li a:hover{
     color: #b0b8b4ff;
     font-weight: 700px;
 }
-.img {
-    width: 46.9%;
-    
-} 
-.me{
-    position: relative;
-    left: -40%;
-      
+
+ 
+.img .me{
+    position: absolute;
+    left: 42%;
+    margin-top: 1.2%;
+    width: 22.5%;
+   
    
 }
 #aboutMe{
@@ -168,34 +205,38 @@ li a:hover{
     margin-left: -15%;
 }
 
-
+button{
+    border: none;
+    background-color: transparent;
+}
 
 .hamburger{
     margin-left: 90%;
     display: none;
+    margin-top: 0;
     cursor: pointer;
 
 }
 .bar{
     width: 60px;
-    padding: 1px;
-    height: 2px;
+    padding: 2px;
+    height: 3px;
     display: block;
     margin: 3px 5px;
     background-color: #fc766aff;
 }
 .bar1{
     width: 40px;
-    padding: 1px;
-    height: 2px;
+    padding: 2px;
+    height: 3px;
     display: block;
     margin: 3px 5px;
     background-color: #fc766aff;
 }
 .bar2{
     width: 20px;
-    padding: 1px;
-    height: 2px;
+    padding: 2px;
+    height: 3px;
     display: block;
     margin: 3px 5px;
     background-color: #fc766aff;
@@ -203,7 +244,7 @@ li a:hover{
 @media screen and (max-width: 900px) {
     .hamburger{
         display: block;
-        margin-left: 110%;
+        margin-left: 100%;
     }
     main{
         display: block;
@@ -211,6 +252,14 @@ li a:hover{
     .right{
         display: none;
     }
+    .top {
+        margin-top: 15%;
+    }
+    .top .txt{
+        margin-top: -5%;
+        margin-left: -10%;
+    }
+    
     #aboutMe img{
         margin-top: 30%;
         margin-left: 4%;
@@ -225,10 +274,32 @@ li a:hover{
         line-height: 1.5rem;
     }
 }
+@media screen and (max-width: 550px){
+    
+    .top .txt{
+        margin-top: -5%;
+        margin-left: -10%;
+    }
+}
+
 @media screen and (max-width: 400px){
     .about .text{
         display: none;
     }
+    .links{
+        margin: 15% 6%;
+        width: 100px;
+        padding: 10px 0px;
+        display: inline-block;
+        border-radius: 50px;
+        border: 1px solid #184a45ff;
+    }
+     img{
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+    
     main{
         display: block;
         height: 100vh;
@@ -299,6 +370,12 @@ li a:hover{
         word-spacing: 10px;
         line-height: 1.5rem;
     }
+    #side-menu{
+        
+        margin-top: -30%;
+        
+    }
+    
     
     
 }

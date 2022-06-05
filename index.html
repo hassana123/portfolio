@@ -11,12 +11,22 @@
     
     <main>
         <section class="left">
+            <div id="side-menu" class="side-nav">
+                <a id="close-menu" class="close" onclick="closemenu()" href="#"><b>&times</b></a>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="#aboutMe">About</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </div>
             <header class="top">
-                <div class="hamburger">
+                <button id="open-menu" onclick="openMenu()" class="hamburger">
                     <span class="bar"></span>
                     <span class="bar1"></span>
                     <span class="bar2"></span>
-                </div>
+                </button>
+                
                 <div class="txt">
                     <div class="square"></div>
                     <h1>FRONTEND <b> DEVELOPER</b> </h1>
@@ -26,10 +36,10 @@
             </header>
             <div class="container">
                 <div class="links">
-                    <a href=""><img src="twitter.png" alt="twitter"></a>
-                    <a href=""><img src="linkedin.png" alt="linkedin"></a>
-                    <a href=""><img src="facebook.png" alt="facebook"></a>
-                    <a href=""><img src="instagram.png" alt="instagram"></a>
+                    <a href="https://twitter.com/hassaabdll1"><img src="twitter.png" alt="twitter"></a>
+                    <a href="https://www.linkedin.com/in/hassana-abdullahi-858040240"><img src="linkedin.png" alt="linkedin"></a>
+                    <a href="https://www.facebook.com/hassana.abdullahi.5036"><img src="facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/haassaanaaaa"><img src="instagram.png" alt="instagram"></a>
                 </div>
                 <div class="about">
                     <h2>hello, i'm,</h2>
@@ -51,9 +61,10 @@
         </section>
         
         <section class="right">
+            
            
             <header>
-                
+
                 <nav>
                     
                     <ul>
@@ -63,12 +74,16 @@
                         <li><a href="">contact</a></li>
                     </ul>
                     
-                </nav>
-            </header>
-            <div class="img">
-                <img class="me" src="Snapchat-667868579-removebg.png" alt="">
-            </div>
+                </nav>   
+
+                <div class="img">
+                    <img class="me" src="Snapchat-667868579-removebg.png" alt="">
+                </div>
+                        
         </section>
+        
+        
+        
     </main>
     
     
@@ -93,6 +108,8 @@
         </div>
         
     </main>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
